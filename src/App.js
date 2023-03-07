@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Title from './components/Title';
+import Box from './components/Box.jsx';
+import Counter from './components/Counter';
+import Input from './components/Input';
+import Colors from './components/Colors';
+
+const arr = ['potatoes', 'cucumber', 'apple'];
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const text = 'hello react';
+	return (
+		<div>
+			{/* <h1
+				style={{
+					color: 'red',
+					fontSize: '60px',
+				}}
+			>
+				{text}
+			</h1> */}
+			{/* <Title text={'hello'} />
+			<Title text={'world'} /> */}
+			{/* {arr.map((item) => {
+				return <Title text={item} />;
+			})} */}
+			{/* <Box width={500} height={150} /> */}
+			{/* <Counter /> */}
+			{/* <Input /> */}
+			<Colors />
+		</div>
+	);
 }
 
 export default App;
